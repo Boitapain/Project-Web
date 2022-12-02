@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+}
+#body{
+}
+
 .navbar{
     background-color: #393E46
 }
@@ -27,8 +33,102 @@ a:hover{
     border-radius: 15%;
     color: white;
 }
+.dropdown-menu{
+    background-color: #393E46;
+}
+.dropdown-item{
+    color: white;
+}
+
+.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* The image used */
+    background-image: url("../img/suzanne-collins-banner.jpg.webp");    
+    /* Set a specific height */
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.welcome-banner{
+    display: flex;
+    justify-content: center;
+    margin-top: 9%;
+}
+.banner{
+    width:90%;
+    background-color: #71ae95;
+    color: black;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-seller{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel{
+    background-color: #393E46;
+    border-radius: 15px;
+    width: 70%;
+    margin-bottom: 10%;
+}
+.carousel-item{
+    color: white;
+}
+.carousel-item p{
+    margin: 0 2ch;
+}
+.carousel-item div{
+    margin: 0 2ch;
+}
+
+footer{
+    background-color: #393E46;
+    color: #71ae95;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+#linktree{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
         justify-content: center;
+    }
+}
+@media (max-width: 992px){
+    .dropdown-item{
+        white-space: break-spaces;
     }
 }

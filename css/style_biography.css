@@ -1,0 +1,24 @@
+#body p{
+    text-align: center;
+    width: 70%;
+}
+#body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#main-title{
+    text-align: center;
+    padding: 1em;
+    color: #71ae95;
+    font-size: 3em;
+}
+#photo-div{
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#suzan-collins-img{
+    height: 20em;
+}

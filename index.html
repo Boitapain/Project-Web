@@ -4,18 +4,21 @@
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Suzan Collins Books</title>
+        <title>Suzanne Collins Books</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
     </head>
 
-    <header>
+    <header id="myHeader">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Suzan Collins</a>
@@ -25,13 +28,36 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Works
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">YEAR OF THE JUNGLE</a>
+                                <a class="dropdown-item" href="#">MOCKINGJAY</a>
+                                <a class="dropdown-item" href="#">CATCHING FIRE</a>
+                                <a class="dropdown-item" href="#">THE HUNGER GAMES</a>
+                                <a class="dropdown-item" href="#">GREGOR THE OVERLANDER</a>
+                                <a class="dropdown-item" href="#">GREGOR AND THE PROPHECY OF BANE</a>
+                                <a class="dropdown-item" href="#">GREGOR AND THE CURSE OF THE WARMBLOODS</a>
+                                <a class="dropdown-item" href="#">GREGOR AND THE MARKS OF SECRET</a>
+                                <a class="dropdown-item" href="#">GREGOR AND THE CODE OF CLAW</a>
+                                <a class="dropdown-item" href="#">WHEN CHARLIE MCBUTTON LOST POWER</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Biography
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="biography.html">Biography</a>
+                                <a class="dropdown-item" href="https://fr.wikipedia.org/wiki/Suzanne_Collins">Wikipédia page</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Biography</a>
+                            <a class="nav-link" aria-current="page" href="interviews.html">Interview</a>
                         </li>
                     </ul>
                 </div>
@@ -40,11 +66,145 @@
     </header>
 
     <body>
+        <div id="body">
         
+            <div class="parallax">
+                <h1 style="color: #71ae95;font-size: 3em;">Suzan Collins</h1>
+            </div>
 
-        <!-- Bootstrap implementation -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <div class="welcome-banner">
+                <div class="banner">
+                    <h1 class="welcome-title">WELCOME</h1>
+                    <p class="welcome-text">
+                        Hi! Thanks for visiting my website. Here’s a picture of me with a rat in Central Park. 
+                        If you’ve read my fantasy series, The Underland Chronicles, you will have a clue as to why I chose this photo. 
+                        If not, you may want to click around and find out a little more about my books. 
+                        Or visit the Scholastic website for cool games and info!
+                    </p>
+                    <a href="https://www.scholastic.com/underlandchronicles/index.html" style="color: black;">Click here to check out Scholastic's Underland Chronicles website!</a>
+                </div>  
+            </div>
+
+            <div class="best-seller">
+                <img src="img/ballad-of-songbirds-and-snakes-cover-3d-small.jpg">
+                <h3>Prizes</h3>
+
+                <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active text-center p-4">
+                            <p>#1 USA TODAY BESTSELLER</p>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <p>#1 NEW YORK TIMES BESTSELLER</p>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <p>#1 WALL STREET JOURNAL BESTSELLER</p>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <p>#1 PUBLISHERS WEEKLY BESTSELLER</p>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <p>#1 PUBLISHERS WEEKLY BESTSELLER</p>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <p>A BARNES & NOBLE BEST YA SCIENCE FICTION AND FANTASY BOOK OF 2020</p>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <p>AN AMAZON BEST SCIENCE FICTION AND FANTASY BOOK OF 2020</p>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <p>A NEW YORK TIMES EDITORS' CHOICE</p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                </div>
+
+                <h3>Reviews</h3>
+                <div id="carouselContent2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active text-center p-4">
+                            <div>
+                                <p class="review-text">
+                                    "'The Ballad of Songbirds and Snakes' delivers a mesmerizing look 
+                                    into the life of Coriolanus Snow and the root causes of his villainous behavior. 
+                                    Collins once again proves that she is a master of building a fascinating world around complex 
+                                    characters who must grapple with the complications of chaos and control and their effects on 
+                                    human nature."
+                                </p>
+                                <p class="review-author">
+                                    --The Associated Press
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <div>
+                                <p class="review-text">
+                                    "If you read The Hunger Games in one sitting, settle in for the long haul once more—because The Ballad of Songbirds and Snakes is nearly impossible to put down...The Ballad of Songbirds and Snakes is incredibly exciting, thought-provoking, and relevant."
+                                </p>
+                                <p class="review-author">
+                                    --Kirkus Reviews, STARRED REVIEW
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <div>
+                                <p class="review-text">
+                                    "Both a tense, character-driven piece and a cautionary tale...The twists and heartbreaks captivate despite tragic inevitabilities."
+                                </p>
+                                <p class="review-author">
+                                    --Kirkus Reviews, STARRED REVIEW
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <div>
+                                <p class="review-text">
+                                    "It's the pull between Coryo's head and heart — and the realization that he actually has a beating heart, not just a rose-scented lump of coal — that makes the future President Snow very worthy of a 517-page prequel."
+                                </p>
+                                <p class="review-author">
+                                    --The Washington Post
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselContent2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselContent2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
     
     </body>
+
+    <footer>
+        <h3>Quick Link</h3>
+        <hr/>
+        <div id="linktree">
+            <a href="https://www.scholastic.ie/"  target=_self">Scholastic</a>
+            <a href="https://www.penguin.com/"  target=_self">Penguin Group</a>
+            <a href="https://www.npr.org/2005/07/25/4646599/adventures-to-read-all-through-the-summer" target=_self">NPR</a>
+            <a href="https://www.indiebound.org/" target=_self">Indiebound</a>
+            <a href="https://www.barnesandnoble.com/" target=_self">Barns and noble </a>
+            <a href="https://www.booksamillion.com./" target=_self">Books-A-Million</a>
+            <a href="https://www.amazon.com/" target=_self">Amazon</a>
+            <a href="https://authorsguild.org/" target=_self">Authors Guild</a> 
+        </div>         
+    </footer>
+    <!-- Bootstrap implementation -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <script src="script/script.js"></script>
 </html>
